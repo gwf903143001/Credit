@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecurityCenterViewController">
+            <connections>
+                <outlet property="PasswordTF1" destination="e6g-lk-Yuq" id="6lG-In-uvK"/>
+                <outlet property="PasswordTF2" destination="OkX-UW-6XW" id="gjO-sg-gU1"/>
+                <outlet property="oldPasswordTF" destination="cC1-DN-RPf" id="0w7-lF-Jbe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cC1-DN-RPf">
+                    <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Efz-Bq-jwe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Efz-Bq-jwe"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Efz-Bq-jwe"/>
+                        </mask>
+                    </variation>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e6g-lk-Yuq">
+                    <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="cl7-3J-WDi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="cl7-3J-WDi"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="cl7-3J-WDi"/>
+                        </mask>
+                    </variation>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3g-mC-h8M">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <animations/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Z2V-2H-biI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="保       存">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Z2V-2H-biI"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Z2V-2H-biI"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="submitBtn:" destination="-1" eventType="touchUpInside" id="8Nr-VJ-SVC"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OkX-UW-6XW">
+                    <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="xYq-iG-49Y"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="xYq-iG-49Y"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="xYq-iG-49Y"/>
+                        </mask>
+                    </variation>
+                </textField>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="cC1-DN-RPf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="56" id="0GT-qc-Fia"/>
+                <constraint firstItem="OkX-UW-6XW" firstAttribute="top" secondItem="e6g-lk-Yuq" secondAttribute="bottom" constant="18" id="2qr-mg-SwQ"/>
+                <constraint firstItem="c3g-mC-h8M" firstAttribute="top" secondItem="OkX-UW-6XW" secondAttribute="bottom" constant="23" id="BI5-d0-yPU"/>
+                <constraint firstAttribute="trailing" secondItem="cC1-DN-RPf" secondAttribute="trailing" constant="20" id="FKw-nq-XZU"/>
+                <constraint firstItem="e6g-lk-Yuq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Fju-MR-U1z"/>
+                <constraint firstAttribute="trailing" secondItem="e6g-lk-Yuq" secondAttribute="trailing" constant="20" id="H7J-ne-EVF"/>
+                <constraint firstAttribute="trailing" secondItem="c3g-mC-h8M" secondAttribute="trailing" constant="20" id="Kdj-uZ-8jL"/>
+                <constraint firstItem="e6g-lk-Yuq" firstAttribute="top" secondItem="cC1-DN-RPf" secondAttribute="bottom" constant="18" id="Qf2-kw-yIv"/>
+                <constraint firstItem="cC1-DN-RPf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Sw2-T5-tzD"/>
+                <constraint firstItem="OkX-UW-6XW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="UXR-oh-UPw"/>
+                <constraint firstAttribute="trailing" secondItem="OkX-UW-6XW" secondAttribute="trailing" constant="20" id="jGP-SX-cIc"/>
+                <constraint firstItem="c3g-mC-h8M" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="nOZ-Te-0Ym"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="cC1-DN-RPf"/>
+                    <exclude reference="e6g-lk-Yuq"/>
+                    <exclude reference="c3g-mC-h8M"/>
+                    <exclude reference="OkX-UW-6XW"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="0GT-qc-Fia"/>
+                    <exclude reference="FKw-nq-XZU"/>
+                    <exclude reference="Sw2-T5-tzD"/>
+                    <exclude reference="Fju-MR-U1z"/>
+                    <exclude reference="H7J-ne-EVF"/>
+                    <exclude reference="Qf2-kw-yIv"/>
+                    <exclude reference="2qr-mg-SwQ"/>
+                    <exclude reference="UXR-oh-UPw"/>
+                    <exclude reference="jGP-SX-cIc"/>
+                    <exclude reference="BI5-d0-yPU"/>
+                    <exclude reference="Kdj-uZ-8jL"/>
+                    <exclude reference="nOZ-Te-0Ym"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="cC1-DN-RPf"/>
+                    <include reference="e6g-lk-Yuq"/>
+                    <include reference="c3g-mC-h8M"/>
+                    <include reference="OkX-UW-6XW"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="0GT-qc-Fia"/>
+                    <include reference="FKw-nq-XZU"/>
+                    <include reference="Sw2-T5-tzD"/>
+                    <include reference="Fju-MR-U1z"/>
+                    <include reference="H7J-ne-EVF"/>
+                    <include reference="Qf2-kw-yIv"/>
+                    <include reference="2qr-mg-SwQ"/>
+                    <include reference="UXR-oh-UPw"/>
+                    <include reference="jGP-SX-cIc"/>
+                    <include reference="BI5-d0-yPU"/>
+                    <include reference="Kdj-uZ-8jL"/>
+                    <include reference="nOZ-Te-0Ym"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="80" y="295"/>
+        </view>
+    </objects>
+</document>
